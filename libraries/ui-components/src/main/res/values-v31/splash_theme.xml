@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AppSplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="postSplashScreenTheme">@style/Theme.BancaMovilApp</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- API 31+ specific attributes -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/animated_icon</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/branding_image_layer_list
+        </item>
+    </style>
+</resources>

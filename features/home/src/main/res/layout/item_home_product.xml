@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="productItem"
+            type="com.bmc.home.screens.products.model.Cell.Product" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_movements_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/teal_200"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView_product_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bottombar_icon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_products_accountName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@{productItem.accountName}"
+                    app:layout_constraintBottom_toTopOf="@+id/textView_products_salary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_product_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Cuenta soles" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView_products_salary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="12dp"
+                    android:lines="1"
+                    android:text="@{productItem.salary}"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView_products_accountName"
+                    app:layout_constraintStart_toStartOf="@+id/textView_products_accountName"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_products_accountName"
+                    tools:text="S/ 1,000.80" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

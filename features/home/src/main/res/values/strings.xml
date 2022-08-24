@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bottombar_products_title">Productos</string>
+    <string name="bottombar_operations_title">Operaciones</string>
+
+</resources>

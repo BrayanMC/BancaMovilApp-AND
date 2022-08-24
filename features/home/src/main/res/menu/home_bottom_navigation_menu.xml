@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_home_products"
+        android:icon="@drawable/bottombar_icon"
+        android:title="@string/bottombar_products_title" />
+
+    <item
+        android:id="@+id/menu_item_home_operations"
+        android:icon="@drawable/bottombar_icon"
+        android:title="@string/bottombar_operations_title" />
+
+</menu>

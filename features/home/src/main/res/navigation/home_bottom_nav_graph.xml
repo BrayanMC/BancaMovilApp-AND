@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_bottom_navigation_graph"
+    app:startDestination="@id/menu_item_home_products">
+
+    <fragment
+        android:id="@+id/menu_item_home_products"
+        android:name="com.bmc.home.screens.products.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" />
+
+    <fragment
+        android:id="@+id/menu_item_home_operations"
+        android:name="com.bmc.home.screens.operations.OperationsFragment"
+        android:label="fragment_operations"
+        tools:layout="@layout/fragment_operations" />
+
+</navigation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loginCredentials_enterDocumentNumber">DNI</string>
+    <string name="loginCredentials_enterPassword">CONTRASEÑA</string>
+    <string name="loginCredentials_login">INGRESAR</string>
+
+</resources>
